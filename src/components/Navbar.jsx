@@ -38,20 +38,19 @@ export default function Navbar() {
           />
         </a>
 
-        {/* ✅ Desktop Nav Links */}
+        {/* ✅ Desktop Nav Links (No Icons) */}
         <div className="hidden md:flex items-center space-x-8 font-dmsans font-medium">
           <ul className="flex space-x-8 items-center">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className={`flex items-center gap-2 transition-colors duration-300 ${
+                  className={`transition-colors duration-300 ${
                     scrolled
                       ? "text-white hover:text-blue-300"
                       : "text-blue-900 hover:text-blue-700"
                   }`}
                 >
-                  <i className={`bi bi-${link.icon} text-lg`}></i>
                   {link.name}
                 </a>
               </li>
@@ -84,7 +83,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* ✅ Mobile Dropdown Menu */}
+      {/* ✅ Mobile Dropdown Menu (With Icons) */}
       {menuOpen && (
         <div className="md:hidden bg-blue-900/95 backdrop-blur-md shadow-lg px-6 py-4 space-y-4 font-dmsans text-white">
           {navLinks.map((link) => (
