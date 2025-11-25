@@ -2,7 +2,6 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Programs from './components/Programs'
 import Features from './components/Features'
-import Demo from './components/Demo'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -15,7 +14,7 @@ export default function App() {
         <Hero />
         <Programs />
         <Features />
-        <Demo />
+ 
         <About />
         <Contact />
       </main>

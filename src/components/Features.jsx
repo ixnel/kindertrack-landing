@@ -1,12 +1,11 @@
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 
 export default function Features() {
   const features = [
-    { icon: 'bi-person-workspace', title: 'Teacher Dashboard', description: 'Track student progress, add milestones, and communicate with parents in real-time' },
-    { icon: 'bi-people-fill', title: 'Parent Portal', description: "Monitor your child's development and stay connected with teachers" },
-    { icon: 'bi-bar-chart-line-fill', title: 'Progress Analytics', description: 'Visual charts and reports showing developmental progress across all areas' },
-    { icon: 'bi-chat-dots-fill', title: 'Real-time Messaging', description: 'Direct communication between teachers and parents with instant notifications' },
+    { icon: 'bi-person-workspace', title: 'Teacher Dashboard', description: 'Record student milestones, track growth, and manage classrooms efficiently.' },
+    { icon: 'bi-people-fill', title: 'Parent Access', description: "Monitor your child's development and communicate with teachers in real-time." },
+    { icon: 'bi-bar-chart-line-fill', title: 'Progress Analytics', description: 'Visual charts and reports for each student across all developmental areas.' },
   ];
 
   // Duplicate multiple times for seamless infinite loop

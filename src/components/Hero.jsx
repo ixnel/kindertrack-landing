@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Hero() {
   return (
     <section
@@ -24,11 +26,15 @@ export default function Hero() {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-              {/* Download Button */}
-              <button className="bg-blue-900 text-white px-6 py-3 rounded-xl font-dmsans font-semibold shadow-md hover:bg-blue-800 hover:shadow-lg transition-all flex items-center justify-center gap-2">
+              {/* Download APK */}
+              <a
+                href="/app-release.apk"
+                download
+                className="bg-blue-900 text-white px-6 py-3 rounded-xl font-dmsans font-semibold shadow-md hover:bg-blue-800 hover:shadow-lg transition-all flex items-center justify-center gap-2"
+              >
                 <i className="bi bi-download text-lg"></i>
-                <span>Download App</span>
-              </button>
+                <span>Download App (47 MB)</span>
+              </a>
 
               {/* Learn More Button */}
               <button className="border-2 border-blue-900 text-blue-900 px-6 py-3 rounded-xl font-dmsans font-semibold shadow-sm hover:bg-blue-900 hover:text-white transition-all flex items-center justify-center gap-2">
@@ -41,11 +47,11 @@ export default function Hero() {
           {/* Right Content - Floating Overlapping Phones */}
           <div className="flex justify-center lg:justify-end items-center relative mt-10 lg:mt-0 min-h-[500px]">
             {/* Back Phone (Teacher View) - Floating Animation */}
-            <div className="absolute left-16 top-14 z-10 opacity-90 animate-float-back">
+            <div className="absolute left-50 top-14 z-10 opacity-90 animate-float-back">
               <img
                 src="/teacher-view.png"
                 alt="KinderTrack Teacher View"
-                className="w-72 md:w-80 lg:w-[440px] h-auto drop-shadow-2xl rounded-2xl"
+                className="w-72 md:w-80 lg:w-[200px] h-auto drop-shadow-2xl rounded-2xl"
               />
             </div>
 
@@ -54,12 +60,12 @@ export default function Hero() {
               <img
                 src="/parent-view.png"
                 alt="KinderTrack Parent View"
-                className="w-72 md:w-80 lg:w-[460px] h-auto drop-shadow-2xl rounded-2xl"
+                className="w-72 md:w-80 lg:w-[200px] h-auto drop-shadow-2xl rounded-2xl"
               />
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

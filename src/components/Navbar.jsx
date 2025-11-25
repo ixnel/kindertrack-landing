@@ -15,7 +15,6 @@ export default function Navbar() {
     { name: "Home", href: "#home", icon: "house-door" },
     { name: "Programs", href: "#programs", icon: "book" },
     { name: "Features", href: "#features", icon: "stars" },
-    { name: "Demo", href: "#demo", icon: "play-circle" },
     { name: "About", href: "#about", icon: "info-circle" },
     { name: "Contact", href: "#contact", icon: "envelope" },
   ];

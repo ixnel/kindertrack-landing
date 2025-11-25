@@ -13,7 +13,7 @@ export default function About() {
         {/* Content */}
         <div className="text-center space-y-6">
           <p className="text-lg text-gray-700 font-dmsans leading-relaxed">
-            KinderTrack is a comprehensive web-assisted mobile application designed to revolutionize 
+            KinderTrack is a mobile application designed to revolutionize 
             early childhood education monitoring. Our platform bridges the gap between teachers and 
             parents, creating a seamless communication channel for tracking kindergarten learners' 
             developmental progress.
